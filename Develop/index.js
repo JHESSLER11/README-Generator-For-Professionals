@@ -53,6 +53,28 @@ const questions = () => {
                 }
             }
         },
+
+        {
+            type: 'input',
+            name: 'Usage',
+            message: 'Provide instructions and examples for use! (required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide usage details!');
+                    return false; 
+                }
+            }
+        },
+
+        {
+            type: 'confirm',
+            name: 'feature',
+            message: 'Would you like to insert a link to a photo?',
+            default: false
+        },
+
     
     ]);
 }
