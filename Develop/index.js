@@ -69,6 +69,7 @@ const questions = () => {
         },
 
         {
+            
             type: 'confirm',
             name: 'feature',
             message: 'Would you like to insert a link to a photo?',
