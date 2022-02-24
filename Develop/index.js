@@ -120,7 +120,7 @@ const questions =
             type: 'checkbox',
             name: 'license',
             message: 'What licenses would you like to include? (Check all that apply)',
-            choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
+            choices: ['Apache License 2.0', 'GNU AGPLv3', 'MIT', 'ISC'],
             when: ({ licenseYN }) => {
                 if (licenseYN) {
                     return true;
