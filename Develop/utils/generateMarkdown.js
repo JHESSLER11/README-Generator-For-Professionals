@@ -5,11 +5,15 @@
 const renderLicenseBadge = license => {
   console.log(license)
   let licenseBadges = [];
-  if (license.includes('Apache 2.0 License')) {
+  if (license.includes('Apache License 2.0')) {
     licenseBadges += 
     '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+  } if (license.includes('GNU AGPLv3')) {
+    licenseBadges += 
+    '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)';
   }
-  if (license === []) {
+
+  if (!license.length) {
     return '';
   } else {
   return licenseBadges;
@@ -24,7 +28,7 @@ const renderLicenseBadge = license => {
 function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// If there is no license, return an empty string    **********not needed likley 
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README

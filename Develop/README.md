@@ -1,31 +1,31 @@
 
-  # 
-  # adkl
+  # [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+  # adf
 
   ## Project Description 
-  adkjf
+  adf
 
   ## Table of Contents
   
   Installation
 
   ## Instillation for use
-  adklfj
+  adf
 
   ## Instructions of use
-  asdkfj
+  asdf
 
   ### undefined
   ![alt text](undefined)
 
   ## License
-  Apache License 2.0
+  Apache License 2.0,GNU AGPLv3
 
   ## Contributors
-  akdj
+  asdf
 
   ## Test 
-  alkdjf
+  adf
 
   ## Contact information for questions 
-  akldjf
+  asdf

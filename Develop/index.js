@@ -37,7 +37,7 @@ const questions =
                 }
             }
         },
-        // Table of Contents
+        // Table of Contents hardcode 
 
         {
             type: 'checkbox',
