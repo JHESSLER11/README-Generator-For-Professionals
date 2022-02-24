@@ -12,7 +12,7 @@ const questions =
         //Project Name
         {
             type: 'input',
-            name: 'project name',
+            name: 'projectName',
             message: 'What is the name of the project? (required)',
             validate: nameInput => {
                 if (nameInput) {
@@ -26,7 +26,7 @@ const questions =
         // Description of Project
         {
             type: 'input',
-            name: 'Description',
+            name: 'description',
             message: 'Provide a description of your project! (required)',
             validate: nameInput => {
                 if (nameInput) {
@@ -63,7 +63,7 @@ const questions =
         // examples of use
         {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'Provide instructions and examples for use! (required)',
             validate: nameInput => {
                 if (nameInput) {
