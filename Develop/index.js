@@ -1,9 +1,13 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { rejects } = require('assert');
+const generateMarkdown = require('./utils/generateMarkdown');
+
+
 
 // TODO: Create an array of questions for user input
-const questions = () => {
+const questions = questionsData => {
     return inquirer.prompt([
         //Project Name
         {
@@ -167,11 +171,19 @@ const questions = () => {
 
     
     ]);
+    
 }
 
 // TODO: Create a function to write README file
-const writeToFile = (fileName, data)  => {
-    //fs.writeFile('./Develop/README.md',)
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            reject(err);
+            return;
+        } else {
+            console.log('Your README file has been generated!')
+        }
+    });
 }
 
 // TODO: Create a function to initialize app
