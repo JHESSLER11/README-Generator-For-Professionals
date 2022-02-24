@@ -11,36 +11,36 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-const generateMarkdown = data => {
+const generateMarkdown = newData => {
   return `
-  # ${data.title}
+  # ${newData.title}
 
   ## Project Description 
-  ${data.description}
+  ${newData.description}
 
   ## Table of Contents 
-  ${data.tableContents}
+  ${newData.tableContents}
 
   ## Instillation for use
-  ${data.instillation}
+  ${newData.instillation}
 
   ## Instructions of use
-  ${data.usage}
+  ${newData.usage}
 
-  ### ${data.photoDetails}
-  ![alt text](${data.linkPhoto})
+  ### ${newData.photoDetails}
+  ![alt text](${newData.linkPhoto})
 
   ## License
-  ${data.LicenseTable}
+  ${newData.LicenseTable}
 
   ## Contributors
-  ${data.contributors}
+  ${newData.contributors}
 
   ## Test 
-  ${data.tests}
+  ${newData.tests}
 
   ## Contact information for questions 
-  ${data.questions}
+  ${newData.questions}
 `;
 }
 
