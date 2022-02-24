@@ -1,29 +1,38 @@
 
-  # project
+  function renderLicenseBadge(license) {
+  let licenseBadges = '';
+  if (license.includes('Apache 2.0 License')) {
+    licenseBadges += 
+    '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+  }
+  return licenseBadges;
+}
+  # alsdkf
 
   ## Project Description 
-  stuff
+  aksdf
 
-  ## Table of Contents 
-  Installation,Usage,License,Contributing,Tests,Questions
+  ## Table of Contents
+  
+  Installation,Usage,License,Contributing,Questions
 
   ## Instillation for use
-  okay
+  adf
 
   ## Instructions of use
-  undefined
+  adf
 
-  ### hello
-  ![alt text](link)
+  ### undefined
+  ![alt text](undefined)
 
   ## License
-  Apache License 2.0,GNU GPLv3,MIT,ISC
+  Apache License 2.0
 
   ## Contributors
-  ham
+  asfd
 
   ## Test 
-  bone
+  asdf
 
   ## Contact information for questions 
-  man
+  asdf

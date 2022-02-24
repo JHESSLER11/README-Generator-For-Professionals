@@ -111,18 +111,18 @@ const questions =
           //License 
           {
             type: 'confirm',
-            name: 'license',
+            name: 'licenseYN',
             message: 'Would you like to add Licensing?',
             default: true
           },
 
           {
             type: 'checkbox',
-            name: 'licenseTable',
-            message: 'What information do you want to add to the table of contents? (Check all that apply)',
+            name: 'license',
+            message: 'What licenses would you like to include? (Check all that apply)',
             choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
-            when: ({ license }) => {
-                if (license) {
+            when: ({ licenseYN }) => {
+                if (licenseYN) {
                     return true;
                 } else {
                     return false;
