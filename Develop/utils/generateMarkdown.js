@@ -18,8 +18,29 @@ const generateMarkdown = data => {
   ## Project Description 
   ${data.description}
 
+  ## Table of Contents 
+  ${data.tableContents}
 
+  ## Instillation for use
+  ${data.instillation}
 
+  ## Instructions of use
+  ${data.usage}
+
+  ### ${data.photoDetails}
+  ![alt text](${data.linkPhoto})
+
+  ## License
+  ${data.LicenseTable}
+
+  ## Contributors
+  ${data.contributors}
+
+  ## Test 
+  ${data.tests}
+
+  ## Contact information for questions 
+  ${data.questions}
 `;
 }
 

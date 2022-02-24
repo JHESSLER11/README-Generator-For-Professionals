@@ -41,7 +41,7 @@ const questions = () => {
 
         {
             type: 'checkbox',
-            name: 'table of contents',
+            name: 'tableContent',
             message: 'What information do you want to add to the table of contents? (Check all that apply)',
             choices: ['Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
             
@@ -97,7 +97,7 @@ const questions = () => {
 
         {
             type: 'input',
-            name: 'link',
+            name: 'linkPhoto',
             message: 'Enter a link to your photo. (Required)',
             when: ({ newPhoto }) => {
               if (newPhoto) {
@@ -118,7 +118,7 @@ const questions = () => {
 
           {
             type: 'checkbox',
-            name: 'license table',
+            name: 'licenseTable',
             message: 'What information do you want to add to the table of contents? (Check all that apply)',
             choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
             when: ({ license }) => {
