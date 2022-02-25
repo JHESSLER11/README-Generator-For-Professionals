@@ -12,6 +12,15 @@ const renderLicenseBadge = license => {
     licenseBadges += 
     '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)';
   }
+   if (license.includes('MIT')) {
+  licenseBadges += 
+  '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+  }
+  if (license.includes('ISC')) {
+    licenseBadges += 
+    '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+    }
+  
 
   if (!license.length) {
     return '';
@@ -19,9 +28,6 @@ const renderLicenseBadge = license => {
   return licenseBadges;
   }
 }
-//[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-//[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-//[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -41,8 +47,12 @@ const generateMarkdown = newData => {
   ${newData.description}
 
   ## Table of Contents
-  
-  ${newData.tableContent}
+  - [Instillation](#Instillation-for-use)
+  - [Instructions](#Instructions-of-use)
+  - [License](#License)
+  - [Contributors](#Contributors) 
+  - [Test](#Test) 
+  - [Contact information](#Contract-information-for-questions)
 
   ## Instillation for use
   ${newData.installation}

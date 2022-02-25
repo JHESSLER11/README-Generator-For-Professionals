@@ -37,15 +37,6 @@ const questions =
                 }
             }
         },
-        // Table of Contents hardcode 
-
-        {
-            type: 'checkbox',
-            name: 'tableContent',
-            message: 'What information do you want to add to the table of contents? (Check all that apply)',
-            choices: ['Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
-            
-        },
         //installation instructions 
         {
             type: 'input',
@@ -74,40 +65,7 @@ const questions =
                 }
             }
         },
-    
-        {
-            type: 'confirm',
-            name: 'newPhoto',
-            message: 'Would you like to insert a link to a photo?',
-            default: true
-        },
-
-        {
-            type: 'input',
-            name: 'photoDetails',
-            message: 'Provide detail of photo you want to insert! (required)',
-            when: ({ newPhoto }) => {
-                if (newPhoto) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        },
-
-        {
-            type: 'input',
-            name: 'linkPhoto',
-            message: 'Enter a link to your photo. (Required)',
-            when: ({ newPhoto }) => {
-              if (newPhoto) {
-                return true;
-              } else {
-                return false;
-              }
-            }
-          },
-          ///ask if they want another question and use a when to get it back up to new photos
+ 
           //License 
           {
             type: 'confirm',
