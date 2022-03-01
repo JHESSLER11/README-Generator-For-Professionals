@@ -92,7 +92,7 @@ const questions =
         {
             type: 'input',
             name: 'contributors',
-            message: 'Include the Github user name of all contributors! (required)',
+            message: 'Include the name of all contributors! (required)',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -121,6 +121,20 @@ const questions =
                     return true;
                 } else {
                     console.log('Please provide your email!');
+                    return false; 
+                }
+            }
+        },
+        //github link
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Provide your Github user name!',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide your Github User name!');
                     return false; 
                 }
             }

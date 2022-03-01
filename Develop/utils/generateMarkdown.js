@@ -1,7 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 
 
+//renders license badge with link to more information about each license
 const renderLicenseBadge = license => {
   console.log(license)
   let licenseBadges = [];
@@ -29,15 +28,7 @@ const renderLicenseBadge = license => {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string    **********not needed likley 
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+//Generates README
 const generateMarkdown = newData => {
   return `
   # ${renderLicenseBadge(newData.license)}
@@ -52,16 +43,13 @@ const generateMarkdown = newData => {
   - [License](#License)
   - [Contributors](#Contributors) 
   - [Test](#Test) 
-  - [Contact information](#Contract-information-for-questions)
+  - [Contact information](#Contact-information-for-questions)
 
   ## Instillation for use
   ${newData.installation}
 
   ## Instructions of use
   ${newData.usage}
-
-  ### ${newData.photoDetails}
-  ![alt text](${newData.linkPhoto})
 
   ## License
   ${newData.license}
@@ -72,8 +60,9 @@ const generateMarkdown = newData => {
   ## Test 
   ${newData.tests}
 
-  ## Contact information for questions 
-  ${newData.questions}
+  ## Questions 
+  For any questions regarding this project please contact me at the following email: ${newData.questions}
+  View my Github at the following link for more projects https://github.com/${newData.github}
 `;
 }
 
