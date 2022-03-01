@@ -20,7 +20,7 @@ const renderLicenseBadge = license => {
     '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
     }
   
-
+  // if empty return empty string
   if (!license.length) {
     return '';
   } else {
@@ -38,14 +38,14 @@ const generateMarkdown = newData => {
   ${newData.description}
 
   ## Table of Contents
-  - [Instillation](#Instillation)
+  - [Instillation](#Instillation-Requirements)
   - [Instructions](#Instructions-of-use)
   - [License](#License)
   - [Contributors](#Contributors) 
   - [Test](#Test) 
-  - [Contact information](#Contact-information-for-questions)
+  - [Contact information](#Contact-information)
   
-  ## Instillation for use
+  ## Instillation Requirements
   ${newData.installation}
 
   ## Instructions of use
@@ -60,7 +60,7 @@ const generateMarkdown = newData => {
   ## Test 
   ${newData.tests}
 
-  ## Questions 
+  ## Contact Information 
   For any questions regarding this project please contact me at the following email: ${newData.questions}
   View my Github at the following link for more projects https://github.com/${newData.github}
 `;

@@ -88,19 +88,12 @@ const questions =
             }
             
         },
-
+        //contributing guidelines
         {
             type: 'input',
             name: 'contributors',
-            message: 'Include the name of all contributors! (required)',
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log('Please provide at least 1 contributor!');
-                    return false; 
-                }
-            }
+            message: 'How would someone contribute to this project?',
+            
         },
 
         //test instructions 
