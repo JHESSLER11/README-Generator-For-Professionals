@@ -41,7 +41,7 @@ const generateMarkdown = newData => {
   - [Instillation](#Instillation-Requirements)
   - [Instructions](#Instructions-of-use)
   - [License](#License)
-  - [Contributors](#Contributors) 
+  - [How to Contribute](#How-to-Contribute) 
   - [Test](#Test) 
   - [Contact information](#Contact-information)
   
@@ -54,7 +54,7 @@ const generateMarkdown = newData => {
   ## License
   ${newData.license}
 
-  ## Contributors
+  ## How to Contribute
   ${newData.contributors}
 
   ## Test 
