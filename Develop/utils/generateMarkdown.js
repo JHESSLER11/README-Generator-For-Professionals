@@ -38,13 +38,13 @@ const generateMarkdown = newData => {
   ${newData.description}
 
   ## Table of Contents
-  - [Instillation](#Instillation-for-use)
+  - [Instillation](#Instillation)
   - [Instructions](#Instructions-of-use)
   - [License](#License)
   - [Contributors](#Contributors) 
   - [Test](#Test) 
   - [Contact information](#Contact-information-for-questions)
-
+  
   ## Instillation for use
   ${newData.installation}
 
