@@ -31,3 +31,6 @@
   ## Contact Information 
   For any questions regarding this project please contact me at the following email: jhessler11@gmail.com
   View my Github at the following link for more projects https://github.com/jhessler11
+  
+  ## Video
+  Click [Here!](https://github.com/JHESSLER11/README-Generator-For-Professionals/blob/main/assets/videos/walkthrough.webm) to go to the video of the application.
