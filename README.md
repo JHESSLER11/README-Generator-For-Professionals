@@ -33,7 +33,7 @@
   View my Github at the following link for more projects https://github.com/jhessler11
   
   ## Video
-  Click [Here!](https://github.com/JHESSLER11/README-Generator-For-Professionals/blob/main/assets/videos/walkthrough.webm) to go to the video of the application.
-  
+
+
   ## Screen Shot of questions and answers
   ![Alt text](https://github.com/JHESSLER11/README-Generator-For-Professionals/blob/main/assets/images/questions%20and%20answers.png)
