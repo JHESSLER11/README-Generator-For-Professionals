@@ -140,7 +140,7 @@ const questions =
 // function to write README file
 const writeToFile = data => {
     let newData = generateMarkdown(data)
-    fs.writeFile('README.md', newData, function (error) {
+    fs.writeFile('./dist/README.md', newData, function (error) {
         if (error) {
             return console.log(error);
         } else {
